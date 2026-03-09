@@ -19,6 +19,8 @@ else
     INTERACTIVE=""
 fi
 
+export DOCKER_BUILDKIT=1
+
 docker run \
     --rm \
     --volume .:/app \
